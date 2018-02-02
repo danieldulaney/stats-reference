@@ -1,0 +1,14 @@
+{
+	"name": "stats-reference",
+	"version": "0.1.0",
+	"description": "A quick-and-easy statistics reference",
+	"license": "MIT",
+	"scripts": {
+		"start": "npm run webpack",
+		"webpack": "webpack -d --watch"
+	},
+	"dev-dependencies": {
+		"webpack": "^3.0.0"
+	}
+}
+
