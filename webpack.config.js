@@ -1,10 +1,17 @@
 module.exports = {
-	entry: './src/app.js',
+	entry: './src/main.js',
 	output: {
 		filename: './dist/bundle.js',
 	},
+	resolve: {
+		extensions: ['.js', '.vue'],
+	},
 	module: {
-		loaders: [
+		rules: [
+			{
+				test: /\.vue$/,
+				loader: 'vue-loader',
+			},
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
